@@ -1,0 +1,264 @@
+*{/*sempre coloque isso ai inicicar um css*/
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;/* uma formade mudar a fonte da escrita ou letras adiciona fonte do google fonts*/
+  }
+  html{
+scroll-behavior: smooth;/* fará uma rolágem de página mais suave */
+  }
+  nav{
+    background-color: rgb(250, 249, 249);
+    position: fixed;/*posição do menu fica fixa ao movimentar a page*/
+    width: 100vw;/*utilizar porcentagem para responsividade é ótimo*/
+    Z-index:  9999; /*esse code corrigiu o erro de das imagens passaram a NAV mesmo fixa com o position: fixed */
+    /* Ou seja, o posicionamento é sequencial, em ordem crescente - o z-index de menor valor é o elemento mais profundo enquanto o z-index de maior valor é o mais próximo da tela.*/
+   }
+
+  main{
+    /* margin-left: 10rem;adiciona espaçamento apenas na margin esquerda
+    margin-right: 10rem;adiciona espaçamento apenas na margin direita */
+    
+      margin: 0 10rem 0 10rem;/* o code de cima também funciona */
+    
+    width: 50vw;
+  }
+
+  
+
+  ul#menu{
+    
+    list-style: none; /*tira as marcações(bolinhas)*/
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;/*posição dos itens center, end, start*/
+    /* este fica um espaçamento legal entre a lista no menu */
+  }
+  /*dentro do STYLE já começa o CSS*/
+
+      
+  ul#menu li{/*estilizando o menu*/
+    padding: .7rem;/*espaçamento interno*/
+    transition: transform .2s ease-in-out; /* dá um efeito de slow no menu */ 
+  }
+
+
+  ul#menu li i{/*o I é porque estou stylizando o icon do bootstrap*/
+    font-size: 1.9rem;/*tamanho da fonte */
+    color: rgb(5, 5, 5);
+  }
+
+  ul#menu li a{/*o A estou stylizando a função de links derecionados */
+    text-decoration: none; /*tira a decoração do texto*/
+     color: black;
+  }
+
+  ul#menu li:hover{
+  transform: scale(1.2);/*faz o efeito de aumentar quando passa o mouse em cima*/
+
+  }
+
+header img{/* stylizando as imagens do header */
+ margin-top: 2.5rem;
+ width: 50vw;
+display: flex;/* oi inline flex */ 
+
+}
+
+header h1{
+  text-align: center;/* alinhamento do texto*/
+  margin-top: 6rem;
+  color:rgb(255, 254, 251);
+  justify-content: center;
+  left: 30rem;
+  position: absolute;
+  width: 30vw;
+}
+
+
+  #nome{
+      color: rgb(3, 3, 3);
+      position: absolute;
+      right: 30rem;/* foi lterado de PX para REM  */
+      top: 16rem;/* foi lterado de PX para REM  */
+      width: 15vw;/* ajudou na organização do texto */
+      flex-direction: column;/* ajudou o texto que estava bagunçado */
+  }
+
+  #situacao{
+      color: rgb(10, 9, 8);
+      position: absolute;
+      left: 39rem;
+      top: 19rem;
+      flex-direction: column;/* ajudou o texto que estava bagunçado */
+      align-content: center;
+      align-items: center;
+  }
+  
+  #foto1{
+    width: 24vw;
+    height: 18rem;
+
+    
+
+  }
+ #foto2{
+  width: 25vw;
+  height: 5rem;
+  position: absolute;
+    top: 3rem; 
+
+ }
+
+
+ #foto3{
+    width: 25vw;
+    height: 10rem;
+    position: absolute;
+    right: 0rem;
+      top: 01rem;
+ }
+ 
+ #botao{
+    line-height: 3.5rem;/* esse código foi usado para abaixar a palavra Jogo de Humor da Ellie */
+    position: absolute;
+    right: 33rem;
+    top: 22rem;
+    border-radius: 1rem;/* mudar a forma do botão */ 
+    background-color: rgb(249, 252, 250);
+    font-size: 1.18rem;
+    color: black;
+    transition: all .2s ease-in-out; /* uma leve animação quando passar o curso */
+    cursor: pointer;
+ }
+
+ #botao:hover{
+   background-color: black;
+   color: aliceblue;
+ }
+ 
+
+  header{
+      background-color: rgb(0, 0, 0);
+      width: 100%;
+      height: 14rem;
+      
+
+  }
+  body{
+      width: 100%;
+       height: 100vh; 
+      background-color: rgb(255, 255, 255);/*é assim que colocamos cor */
+      min-width: 100vw;/* view port medida reponsiva*/ 
+      /*display: inline-block; */
+      flex-direction: column;/* ajuda 
+
+    /*padding: 16px;*/
+     /* border: solid 10px   red;*/
+      /*margin: 2px;/* faz o contrário de padding*/
+  }
+
+  section#opiniao{
+   padding: 3rem;
+  }
+  section#opiniao form{
+    display: flex;
+    flex-wrap: wrap; /* quebra texto */
+    justify-content:center;/*centraliza minha caixinha de opinião */
+   }
+
+   section#opiniao form input{
+    padding: .4rem;
+    font-size: 1rem;
+    width: 15%;
+
+   }
+   section#opiniao form label{
+     font-size: 1.09rem;
+     margin:.6rem;
+    
+   }
+
+section#opiniao img{
+right: 20rem;
+width: 18vw;
+top: 33rem;
+position:absolute
+}
+
+   section#opiniao form button{
+      background-color: black;
+      margin-left: 1rem;
+      color: aliceblue;
+      border-radius: .1rem;
+      width: 5vw;
+      cursor: pointer; /* foi mudado o curso para o usuária saber que este elemente é clicável */ 
+      transition: all .2s ease-in-out; /* uma leve animação quando passar o curso */
+   }
+   section#opiniao form button:hover{
+    color: rgb(5, 5, 5);
+    background-color: rgb(252, 250, 250);
+
+
+   }
+
+  footer{
+    background-color: black;
+    width: 90.5vw;
+    padding: 4rem;/* tamanho padão de mercado */
+    text-align: center;
+    color: aliceblue;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  footer a{/* alterei a cor do link para combinar com o conjunto */
+    text-decoration:none;
+    color: aliceblue;
+
+    
+  }
+footer i{
+  font-size: 3rem;
+  
+}
+footer a:hover{/* mudando a cor quando o usuário passar o mause saber que é um link */
+  color: rgb(247, 77, 77);
+}
+
+
+ /* body {
+      display: block;
+
+  } */
+  /* usando o ID e colocando assim conseguimos acessar o titulo da pagina */
+  /* chamaos o ID pela # */
+  /* #tituloDaPagina{
+     color: aliceblue;
+   */
+  /* } */
+  /* para comentar no css tbm pode colocar ctrl shift a  */
+     /* é necessário o arquivo style estar dentro de uma pasta chamada ASSETS */
+
+
+
+
+
+
+
+     /* informaçoes o PX é cada quadradinho na tela*/
+/* o REM  é uma unidade relativa ao tamanho da tela */
+/* o EM é relacionado ao espaço que seu item espessífico possui */ 
+/* o REM  é todo o espaçp do BDOY já o EM é uma TAG apenas */
+
+/* usando o padding locolaremos 0 (cima) 0 (direita) 0(baixo) 0(esquerda) usando um relógio imaginário para ajudar */
+
+/* <ul>    <li> início </li>   </ul>  = lista desordenada com pontos */
+/* <ol>    <li> início </li>   </ol>   = lista ordenada com numerada */
+
+/* dica do thi´code, não recomenda editar imagem no css é melhor já pegá-las prontas */
+
+
+
+
