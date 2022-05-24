@@ -62,6 +62,7 @@ header img{/* stylizando as imagens do header */
  width: 50vw;
 display: flex;/* oi inline flex */ 
 
+
 }
 
 header h1{
@@ -72,6 +73,7 @@ header h1{
   left: 30rem;
   position: absolute;
   width: 30vw;
+  
 }
 
 
@@ -129,6 +131,7 @@ header h1{
     color: black;
     transition: all .2s ease-in-out; /* uma leve animação quando passar o curso */
     cursor: pointer;
+    
  }
 
  #botao:hover{
